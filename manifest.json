@@ -1,0 +1,19 @@
+{
+	"manifest_version": 3,
+	"name": "Amazon Rating Filter",
+	"version": "0.1",
+	"content_scripts": [
+		{
+			"matches": ["*://*/*"],
+			"include_globs": [
+				"*://*.amazon.*/*/dp/*", 
+				"*://*.amazon.*/dp/*",
+				"*://*.amazon.*/gp/product/*"
+			],
+			"js": [
+				"jquery-3-6.min.js",
+				"amazon-rating-filter.js"
+			]
+		}
+	]
+}
